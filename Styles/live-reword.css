@@ -1,0 +1,137 @@
+/* ================================
+   Live Rewards Section
+   ================================ */
+:root {
+  --live-bg: #323738; /* background box */
+  --live-title: #ffffff; /* title text */
+  --live-sub: #aaaaaa; /* subtitle text */
+  --live-accent: #1ed760; /* green accent */
+  --live-summary-bg: #3e4344;
+}
+
+.live-rewards {
+  background: var(--live-bg);
+  margin: 14px;
+  padding: 20px;
+  border-radius: 12px;
+  color: var(--live-title);
+}
+
+.live-rewards .live-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.live-rewards .live-header h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.live-rewards .live-icon {
+  font-size: 14px;
+}
+
+.live-rewards .live-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: start;
+  line-height: 150%;
+  border-radius: 8px;
+  color: var(--live-sub);
+  background: var(--live-summary-bg);
+  padding: 10px;
+}
+
+.live-rewards .live-summary .live-amount {
+  font-weight: 700;
+  color: var(--live-accent);
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.live-rewards {
+  /* max-width: 345px; */
+  margin: 0 auto;
+  background: var(--live-bg);
+  /* padding: 20px; */
+  /* border-radius: 12px; */
+}
+
+.live-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.live-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--live-title);
+  align-items: center;
+}
+
+.live-row p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.live-row b {
+  color: var(--live-accent);
+  font-weight: 600;
+  margin: 0 3px 0 0;
+}
+
+.live-row span {
+  background-color: var(--live-accent);
+  color: var(--live-title);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: bold;
+  font-style: normal;
+  flex-shrink: 0;
+}
+
+/* Alternative layout to match the 3-column structure in image */
+.live-row-alt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--live-title);
+  padding: 8px 0;
+  gap: 20px;
+}
+
+.live-row-alt .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.live-row-alt .item .name {
+  color: var(--live-title);
+}
+
+.live-row-alt .item .value {
+  color: var(--live-accent);
+  font-weight: bold;
+}
