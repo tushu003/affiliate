@@ -97,7 +97,8 @@
   width: var(--chev-size);
   height: var(--chev-size);
   min-width: var(--chev-size);
-  background: var(--chev-bg);
+  background: var(--btn-bg);
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
