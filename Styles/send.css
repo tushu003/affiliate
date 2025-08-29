@@ -1,0 +1,105 @@
+
+body{
+    background-color: black;
+}
+.container{
+    max-width: 375px;
+}
+
+
+
+   body {
+      background: #1e1e1e;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+        :root {
+      --bg-body: #1e1e1e;
+      --bg-card: #2a2a2a;
+      --text-primary: #F7F7F7;
+      --text-secondary: #D8D8D8;
+      --bg-input: #1c1c1c;
+      --btn-bg: #323738;
+      --btn-bg-hover: #444444;
+    }
+
+    .send-card {
+      background: #2a2a2a;
+      color: #fff;
+      width: 350px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      margin-bottom: 18px;
+    }
+
+    .send-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .whatsapp-logo {
+      width: 44px;
+      height: 404x;
+    }
+
+    .send-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .send-desc {
+      margin: 8px 0 16px 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .send-input-row {
+      display: flex;
+      background: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .send-input-row input {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      outline: none;
+      background: transparent;
+      
+      
+    }
+    .send-input-text{
+      color: var(--text-primary); 
+    }
+
+    .send-input-row button {
+      background: var(--btn-bg);
+      color: var(--text-primary);
+      border: none;
+      border-radius: 8px;
+      padding: 6px 6px;
+      cursor: pointer;
+      font-size: 14px;
+        position: absolute;
+      right: 6px;
+      top: 18%;
+      
+    }
+
+    .send-input-row button:hover {
+      background: #444;
+    }
+    .send-btn{
+        
+       
+    }
