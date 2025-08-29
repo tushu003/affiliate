@@ -1,11 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Affiliate Card</title>
+    <style>
+      /* ================================
+         🎨 Color & Style Variables
+         ================================ */
+      :root {
+        --body-bg: #121212; /* main body background */
+        --card-bg-top: #1c3b2c; /* card gradient top (slightly lighter) */
+        --card-bg-mid: #323738; /* middle shade */
+        --card-bg-bottom: #232626; /* card gradient bottom (darker) */
+        --card-radius: 16px; /* border radius */
+
+        --header-bg: #232626; /* slightly different from body */
+        --header-text: #cccccc; /* header text color */
+
+        --text-primary: #ffffff; /* main text */
+        --text-muted: #aaaaaa; /* muted text */
+        --accent: #1ed760; /* green accent */
+        --arrow-bg: #2e3131; /* back arrow background */
+
+        --btn-gradient-start: #54f19f; /* button gradient start */
+        --btn-gradient-end: #b0ed8e; /* button gradient end */
+        --btn-text: #1e2121; /* button text color */
+
+        --footer-bg: #3e4344; /* footer button background */
+        --footer-hover-bg: #444444; /* footer hover background */
+        --footer-text: #f9f9f9; /* footer text */
+      }
+
+      /* ================================
+         Layout & Body
+         ================================ */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--body-bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* ================================
+         Card
+         ================================ */
+      .affiliate.card {
+        background: linear-gradient(
+          180deg,
+          var(--card-bg-top) 0%,
+          var(--card-bg-bottom) 100%
+        );
+        border-radius: var(--card-radius);
+        width: 375px;
+        text-align: center;
+        padding: 0 0 20px; /* 🔹 no top/side padding */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+        color: var(--text-primary);
+        position: relative;
+        overflow: hidden; /* ensure header blends with rounded corners */
+      }
+
+      /* ================================
+         Header
+         ================================ */
+      .affiliate .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        background: var(--header-bg);
+        border-top-left-radius: var(--card-radius);
+        border-top-right-radius: var(--card-radius);
+      }
+
+      .affiliate .back-btn {
+        position: absolute;
+        left: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .affiliate .back-btn svg {
+        width: 28px;
+        height: 28px;
+        fill: var(--text-muted);
+        background: var(--arrow-bg);
+        margin-left: 20px;
+        border-radius: 4px;
+      }
+
+      .affiliate .card-header h2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--header-text);
+        margin: 0;
+      }
+
+      /* ================================
+         Title & Subtitle
+         ================================ */
+      .affiliate .card-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 8px;
+      }
+
+      .affiliate .card-subtitle {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 140%;
+        color: var(--accent);
+        margin-bottom: 24px;
+      }
+
+      /* ==================================
+        card content
+      =====================================*/
+      .affiliate-card-content {
+        background: var(--card-bg-mid);
+        margin: 0 14px;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      /* ================================
+   Gradient Button (Modified)
+   ================================ */
+      .affiliate .btn {
+        display: inline-block;
+        padding: 8px 26px;
+        border: none;
+        border-radius: 8px; /* rounded corners */
+        background: linear-gradient(
+          90deg,
+          var(--btn-gradient-start),
+          var(--btn-gradient-end)
+        );
+        color: var(--btn-text);
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 150%;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+
+        /* new bottom border for 3D effect */
+        border-bottom: 4px solid #45c77f;
+      }
+
+      /* hover effect */
+      .affiliate .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      /* ================================
+         Image Box
+         ================================ */
+      .affiliate .image-box {
+        margin: 32px 0;
+      }
+
+      .affiliate .image-box img {
+        width: 293px;
+        height: 202px;
+      }
+
+      /* ================================
+         Footer
+         ================================ */
+      .affiliate .footer {
+        margin-top: 15px;
+      }
+
+      .affiliate .footer button {
+        width: 100%;
+        padding: 12px;
+        background: var(--footer-bg);
+        color: var(--footer-text);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      .affiliate .footer button:hover {
+        background: var(--footer-hover-bg);
+        color: var(--text-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="affiliate card">
+        <!-- Header with Back Arrow -->
+        <div class="card-header">
+          <button class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+          <h2>Affiliate</h2>
+        </div>
+
+        <!-- Content -->
+        <div class="affiliate-card-content">
+          <div class="card-title">Invite Friend to Earn</div>
+          <div class="card-subtitle">$1250 + 25% Commission</div>
+
+          <a href="#" class="btn">Sign Up & Earn</a>
+
+          <div class="image-box">
+            <img src="assets/image/invite-frient-img.png" alt="Reward" />
+          </div>
+
+          <div class="footer">
+            <button>Referral Terms & Conditions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
