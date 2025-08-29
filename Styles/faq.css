@@ -15,16 +15,25 @@
   --ff: "AvertaStd", Arial, sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
+
+     --bg-body: #1e1e1e;
+      --bg-card: #2a2a2a;
+      --text-primary: #F7F7F7;
+      --text-secondary: #D8D8D8;
+      --bg-input: #1c1c1c;
+      --btn-bg: #323738;
+      --btn-bg-hover: #444444;
 }
 
 .faq{
-  padding: max(24px, env(safe-area-inset-top)) 16px 32px;
+  padding: max(24px, env(safe-area-inset-top)) 8px 32px;
   display:flex; justify-content:center;
   background-color: #2a2a2a;
   border-radius: 12px;
+  width:100%;
 }
 .faq__container{
-  width:100%;
+  width: 100%;
   /* looks great on all phones; also centers on desktop */
 }
 .faq__title{

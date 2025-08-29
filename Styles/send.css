@@ -79,7 +79,7 @@ body{
       
     }
     .send-input-text{
-      color: var(--text-primary); 
+      color: var(--text-primary) !important; 
     }
 
     .send-input-row button {
@@ -99,7 +99,4 @@ body{
     .send-input-row button:hover {
       background: #444;
     }
-    .send-btn{
-        
-       
-    }
+   
