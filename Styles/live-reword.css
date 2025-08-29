@@ -9,12 +9,27 @@
   --live-summary-bg: #3e4344;
 }
 
+/* Live Rewards: match margin with other cards */
 .live-rewards {
   background: var(--live-bg);
-  margin: 14px;
-  padding: 20px;
+  margin: 14px; /* This will now show properly */
+  padding: 8px 20px 20px 20px; /* Added bottom padding */
   border-radius: 12px;
   color: var(--live-title);
+  /* Remove conflicting styles */
+}
+
+/* Remove this conflicting class that was overriding margins */
+/* .live-rewards-header {
+  width: 345px;
+  margin: 14px;
+  background: var(--live-bg);
+  border-radius: 12px;
+  text-align: center;
+} */
+
+.live-header .live-icon {
+  margin-top: 6px;
 }
 
 .live-rewards .live-header {
@@ -24,12 +39,14 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
+  text-align: left; /* Align header to left */
 }
 
 .live-rewards .live-header h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+  margin: 0; /* Remove default margin */
 }
 
 .live-rewards .live-icon {
@@ -42,6 +59,7 @@
   font-size: 12px;
   text-align: start;
   line-height: 150%;
+  margin-bottom: 16px; /* Add margin bottom */
   border-radius: 8px;
   color: var(--live-sub);
   background: var(--live-summary-bg);
@@ -53,14 +71,6 @@
   color: var(--live-accent);
   line-height: 150%;
   font-size: 16px;
-}
-
-.live-rewards {
-  /* max-width: 345px; */
-  margin: 0 auto;
-  background: var(--live-bg);
-  /* padding: 20px; */
-  /* border-radius: 12px; */
 }
 
 .live-list {
@@ -107,31 +117,4 @@
   font-weight: bold;
   font-style: normal;
   flex-shrink: 0;
-}
-
-/* Alternative layout to match the 3-column structure in image */
-.live-row-alt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: var(--live-title);
-  padding: 8px 0;
-  gap: 20px;
-}
-
-.live-row-alt .item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-}
-
-.live-row-alt .item .name {
-  color: var(--live-title);
-}
-
-.live-row-alt .item .value {
-  color: var(--live-accent);
-  font-weight: bold;
 }
