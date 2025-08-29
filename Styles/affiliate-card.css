@@ -11,9 +11,9 @@
   --header-bg: #232626; /* slightly different from body */
   --header-text: #cccccc; /* header text color */
 
-  --text-primary: #F7F7F7; /* main text */
-  --text-muted: #AAAAAA; /* muted text */
-  --accent: #24EE87; /* green accent */
+  --text-primary: #f7f7f7; /* main text */
+  --text-muted: #aaaaaa; /* muted text */
+  --accent: #24ee87; /* green accent */
   --arrow-bg: #2e3131; /* back arrow background */
 
   --btn-gradient-start: #54f19f; /* button gradient start */
@@ -23,6 +23,10 @@
   --footer-bg: #3e4344; /* footer button background */
   --footer-hover-bg: #444444; /* footer hover background */
   --footer-text: #f9f9f9; /* footer text */
+
+  --bg-input: #1c1c1c;
+  --btn-bg: #323738;
+  --btn-bg-hover: #444444;
 }
 
 /* ================================
@@ -201,8 +205,6 @@ body {
   color: var(--text-primary);
 }
 
-
-
 /* ================================
    BDT 1000 Section
    ================================ */
@@ -261,4 +263,66 @@ body {
 
 .affiliate-card-bdt .bdt-btn:hover {
   background: var(--footer-hover-bg);
+}
+
+/* ================================
+   Learn more Section
+   ================================ */
+.affiliate-card-bdt .learn-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 140%;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.affiliate-card-bdt .learn-title span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.affiliate-card-bdt .learn-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: start;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.send-input-row {
+  display: flex;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.send-input-row input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.send-input-text {
+  color: var(--text-primary);
+}
+
+.send-input-row button {
+  background: var(--btn-bg);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  right: 6px;
+  top: 18%;
+}
+
+.send-input-row button:hover {
+  background: #444;
+}
+.send-btn {
 }
