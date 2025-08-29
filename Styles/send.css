@@ -28,7 +28,7 @@ body{
     }
 
     .send-card {
-      background: var(--bg-card);
+      background: var(--btn-bg);
       color: #fff;
       width: 350px;
       padding: 20px;
