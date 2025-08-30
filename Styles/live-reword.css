@@ -1,0 +1,120 @@
+/* ================================
+   Live Rewards Section
+   ================================ */
+:root {
+  --live-bg: #323738; /* background box */
+  --live-title: #ffffff; /* title text */
+  --live-sub: #aaaaaa; /* subtitle text */
+  --live-accent: #1ed760; /* green accent */
+  --live-summary-bg: #3e4344;
+}
+
+/* Live Rewards: match margin with other cards */
+.live-rewards {
+  background: var(--live-bg);
+  margin: 14px; /* This will now show properly */
+  padding: 8px 20px 20px 20px; /* Added bottom padding */
+  border-radius: 12px;
+  color: var(--live-title);
+  /* Remove conflicting styles */
+}
+
+/* Remove this conflicting class that was overriding margins */
+/* .live-rewards-header {
+  width: 345px;
+  margin: 14px;
+  background: var(--live-bg);
+  border-radius: 12px;
+  text-align: center;
+} */
+
+.live-header .live-icon {
+  margin-top: 6px;
+}
+
+.live-rewards .live-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: left; /* Align header to left */
+}
+
+.live-rewards .live-header h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0; /* Remove default margin */
+}
+
+.live-rewards .live-icon {
+  font-size: 14px;
+}
+
+.live-rewards .live-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: start;
+  line-height: 150%;
+  margin-bottom: 16px; /* Add margin bottom */
+  border-radius: 8px;
+  color: var(--live-sub);
+  background: var(--live-summary-bg);
+  padding: 10px;
+}
+
+.live-rewards .live-summary .live-amount {
+  font-weight: 700;
+  color: var(--live-accent);
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.live-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.live-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--live-title);
+  align-items: center;
+}
+
+.live-row p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.live-row b {
+  color: var(--live-accent);
+  font-weight: 600;
+  margin: 0 3px 0 0;
+}
+
+.live-row span {
+  background-color: var(--live-accent);
+  color: var(--live-title);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: bold;
+  font-style: normal;
+  flex-shrink: 0;
+}

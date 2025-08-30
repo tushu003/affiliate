@@ -1,11 +1,13 @@
-
-:root{
-    /* FAQ Variables */
+/* ================================
+   FAQ SECTION - Fixed Margins
+   ================================ */
+:root {
+  /* FAQ Variables */
   --gap: 12px;
   --panel-pad: 8px;
   --radius: 16px;
   --shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
-  
+
   /* Chevron Variables */
   --chev-size: 32px;
   --chev-bg: var(--bg-card);
@@ -15,30 +17,32 @@
   --ff: "AvertaStd", Arial, sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
-
-     --bg-body: #1e1e1e;
-      --bg-card: #2a2a2a;
-      --text-primary: #F7F7F7;
-      --text-secondary: #D8D8D8;
-      --bg-input: #1c1c1c;
-      --btn-bg: #323738;
-      --faq-bg: #323738;
-      --btn-bg-hover: #444444;
+  --bg-body: #1e1e1e;
+  --bg-card: #2a2a2a;
+  --text-primary: #f7f7f7;
+  --text-secondary: #d8d8d8;
+  --bg-input: #1c1c1c;
+  --btn-bg: #323738;
+  --faq-bg: #323738;
+  --btn-bg-hover: #444444;
 }
 
-.faq{
+.faq {
   padding: max(24px, env(safe-area-inset-top)) 8px 32px;
-  display:flex; justify-content:center;
+  display: flex;
+  justify-content: center;
   background-color: var(--btn-bg);
+  margin: 14px; /* Changed from 12px to match other sections */
   border-radius: 12px;
-  width:100%;
+  /* Removed width: 100% to match other sections */
 }
-.faq__container{
+
+.faq__container {
   width: 100%;
-  /* looks great on all phones; also centers on desktop */
 }
-.faq__title{
-  margin:0 0 12px;
+
+.faq__title {
+  margin: 0 0 12px;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
@@ -46,27 +50,25 @@
 }
 
 /* Card panel */
-.faq__panel{
+.faq__panel {
   background: var(--faq-bg);
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-   /* inner padding around items */
 }
 
 /* ----------- Item ----------- */
-.faq-item{
+.faq-item {
   border-radius: 12px;
-  overflow: hidden;   
-    background-color: #2E3233;
-    margin-bottom: 8px;  
-            /* smooth clip for open state */
+  overflow: hidden;
+  background-color: #2e3233;
+  margin-bottom: 8px;
 }
 
 /* ROW layout (your request): question + chevron */
-.faq-item__summary{
-  display: flex;                    /* ROW */
-  flex-direction: row;              /* explicit row */
+.faq-item__summary {
+  display: flex; /* ROW */
+  flex-direction: row; /* explicit row */
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--gap);
@@ -76,49 +78,55 @@
   border-radius: 12px;
   outline: none;
 }
-.faq-item__summary::-webkit-details-marker{ display:none; }
+
+.faq-item__summary::-webkit-details-marker {
+  display: none;
+}
 
 /* Question text */
-.faq-item__question{
+.faq-item__question {
   font-weight: 600;
   font-size: 12px;
   margin: 8px;
   line-height: 17px;
   color: var(--text-primary);
-
 }
 
 /* Chevron pill on the right */
-.faq-item__chevron{
+.faq-item__chevron {
   width: var(--chev-size);
   height: var(--chev-size);
   min-width: var(--chev-size);
-  background: var(--chev-bg);
+  background: var(--btn-bg);
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
-.faq-item__chevron::before{
+
+.faq-item__chevron::before {
   content: "";
-  width: 8px; height: 8px;
+  width: 8px;
+  height: 8px;
   border-right: 2px solid var(--chev-ink);
   border-bottom: 2px solid var(--chev-ink);
-  transform: rotate(-45deg);        /* ">" chevron */
-  display:block;
+  transform: rotate(-45deg); /* ">" chevron */
+  display: block;
 }
 
 /* Open state: rotate to point up */
-.faq-item[open] .faq-item__chevron{
+.faq-item[open] .faq-item__chevron {
   transform: rotate(90deg);
 }
 
 /* Content */
-.faq-item__content{
+.faq-item__content {
   padding: 0 var(--panel-pad) var(--panel-pad);
 }
-.faq-item__content p{
-    font-weight: 600;
+
+.faq-item__content p {
+  font-weight: 600;
   margin: 8px;
   font-size: 14px;
   line-height: 20px;
@@ -126,6 +134,6 @@
 }
 
 /* Divider between items */
-.faq-item + .faq-item{
+.faq-item + .faq-item {
   border-top: 1px solid var(--border-divider);
 }
