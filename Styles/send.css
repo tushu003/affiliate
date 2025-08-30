@@ -22,7 +22,7 @@
 
 .send-card {
   background: var(--btn-bg);
-  color: #fff;
+  color: var(--text-primary);
   width: 88%; /* Changed from 350px to be responsive like other sections */
   padding: 20px;
   border-radius: 12px;
@@ -44,12 +44,14 @@
 .send-title {
   font-size: 20px;
   font-weight: 600;
+  text-align: start;
   color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .send-desc {
-  margin: 8px 0 16px 0;
+  /* margin: 0px 0px 16px 0px; */
+  text-align: start;
   font-size: 14px;
   color: var(--text-secondary);
 }
@@ -58,6 +60,7 @@
   display: flex;
   background: var(--input-bg-color);
   border-radius: 8px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
 }
