@@ -8,10 +8,9 @@ body{
 
 
 
-   send {
-      background: #1e1e1e;
+   .send {
+      
       font-family: Arial, sans-serif;
-      display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
