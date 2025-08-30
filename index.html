@@ -81,84 +81,145 @@
         </div>
 
         <!-- Live Rewards Section -->
-        <div class="live-rewards">
-            <div class="live-header">
-                <span class="live-icon">
-                    <img src="assets/image/live-icon.png" alt="">
-                </span>
-                <h3>Live Rewards</h3>
-            </div>
-
-
-            <div class="live-summary">
-                <span>Total Rewards Sent To- <br /> Date</span>
-                <span class="live-amount">BDT 341, 20.46K</span>
-            </div>
-
-           <!-- <div class="live-rewards"> -->
-            <div class="live-list">
-                <div class="live-row">
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Mannu <b>+7</b><span>T</span>
-                    </p>
-                </div>
-
-                <div class="live-row">
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Mannu <b>+7</b><span>T</span>
-                    </p>
-                </div>
-
-                <div class="live-row">
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Mannu <b>+7</b><span>T</span>
-                    </p>
-                </div>
-
-                <div class="live-row">
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Mannu <b>+7</b><span>T</span>
-                    </p>
-                </div>
-
-                <div class="live-row">
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Anana blue <b>+7</b><span>T</span>
-                    </p>
-                    <p>
-                        Mannu <b>+7</b><span>T</span>
-                    </p>
-                </div>
-            </div>
-            <!-- </div> -->
+    <div class="live-rewards">
+        <div class="live-header">
+            <span class="live-icon">
+              <img src="assets/image/live-icon.png" alt="">
+            </span>
+            <h3>Live Rewards</h3>
         </div>
+
+        <div class="live-summary">
+            <span>Total Rewards Sent To- <br /> Date</span>
+            <span class="live-amount">BDT 341, 20.46K</span>
+        </div>
+
+        <div class="live-list" id="liveList">
+            <div class="live-scroll-container" id="scrollContainer">
+                <!-- First set of rows -->
+                <div class="live-row">
+                    <p>Anana blue <b>+7</b><span>T</span></p>
+                    <p>Anana blue <b>+7</b><span>T</span></p>
+                    <p>Mannu <b>+7</b><span>T</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Sakib Khan <b>+12</b><span>G</span></p>
+                    <p>Rima <b>+5</b><span>S</span></p>
+                    <p>John <b>+8</b><span>B</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Maria <b>+15</b><span>D</span></p>
+                    <p>Ahmed <b>+3</b><span>C</span></p>
+                    <p>Lisa <b>+9</b><span>H</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Rahman <b>+6</b><span>F</span></p>
+                    <p>Fatima <b>+11</b><span>R</span></p>
+                    <p>David <b>+4</b><span>P</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Nasir <b>+13</b><span>M</span></p>
+                    <p>Sumon <b>+2</b><span>L</span></p>
+                    <p>Rashid <b>+10</b><span>K</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Ayesha <b>+9</b><span>A</span></p>
+                    <p>Karim <b>+14</b><span>K</span></p>
+                    <p>Nadia <b>+6</b><span>N</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Rahim <b>+8</b><span>R</span></p>
+                    <p>Sadia <b>+11</b><span>S</span></p>
+                    <p>Hasan <b>+5</b><span>H</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Marium <b>+16</b><span>M</span></p>
+                    <p>Tanvir <b>+7</b><span>T</span></p>
+                    <p>Ruhul <b>+12</b><span>R</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Shiuli <b>+4</b><span>S</span></p>
+                    <p>Babul <b>+13</b><span>B</span></p>
+                    <p>Nasreen <b>+9</b><span>N</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Khalil <b>+10</b><span>K</span></p>
+                    <p>Rashida <b>+8</b><span>R</span></p>
+                    <p>Shamim <b>+15</b><span>S</span></p>
+                </div>
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="live-row">
+                    <p>Anana blue <b>+7</b><span>T</span></p>
+                    <p>Anana blue <b>+7</b><span>T</span></p>
+                    <p>Mannu <b>+7</b><span>T</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Sakib Khan <b>+12</b><span>G</span></p>
+                    <p>Rima <b>+5</b><span>S</span></p>
+                    <p>John <b>+8</b><span>B</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Maria <b>+15</b><span>D</span></p>
+                    <p>Ahmed <b>+3</b><span>C</span></p>
+                    <p>Lisa <b>+9</b><span>H</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Rahman <b>+6</b><span>F</span></p>
+                    <p>Fatima <b>+11</b><span>R</span></p>
+                    <p>David <b>+4</b><span>P</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Nasir <b>+13</b><span>M</span></p>
+                    <p>Sumon <b>+2</b><span>L</span></p>
+                    <p>Rashid <b>+10</b><span>K</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Ayesha <b>+9</b><span>A</span></p>
+                    <p>Karim <b>+14</b><span>K</span></p>
+                    <p>Nadia <b>+6</b><span>N</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Rahim <b>+8</b><span>R</span></p>
+                    <p>Sadia <b>+11</b><span>S</span></p>
+                    <p>Hasan <b>+5</b><span>H</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Marium <b>+16</b><span>M</span></p>
+                    <p>Tanvir <b>+7</b><span>T</span></p>
+                    <p>Ruhul <b>+12</b><span>R</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Shiuli <b>+4</b><span>S</span></p>
+                    <p>Babul <b>+13</b><span>B</span></p>
+                    <p>Nasreen <b>+9</b><span>N</span></p>
+                </div>
+
+                <div class="live-row">
+                    <p>Khalil <b>+10</b><span>K</span></p>
+                    <p>Rashida <b>+8</b><span>R</span></p>
+                    <p>Shamim <b>+15</b><span>S</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- Learn more about our Affiliate Program -->
         <div class="affiliate-card-bdt">
@@ -361,5 +422,73 @@
         </div>
       </div>
     </div>
+
+
+<script>
+        // Simple continuous scroll - always visible content
+        const scrollContainer = document.getElementById('scrollContainer');
+        
+        // Sample data for generating new rows
+        const sampleNames = [
+            'Anana blue', 'Sakib Khan', 'Rima', 'John', 'Maria', 'Ahmed', 'Lisa', 
+            'Rahman', 'Fatima', 'David', 'Nasir', 'Sumon', 'Rashid', 'Ayesha', 
+            'Karim', 'Nadia', 'Rahim', 'Sadia', 'Hasan', 'Marium', 'Tanvir',
+            'Ruhul', 'Shiuli', 'Babul', 'Nasreen', 'Khalil', 'Rashida', 'Shamim'
+        ];
+        
+        const sampleLetters = ['T', 'G', 'S', 'B', 'D', 'C', 'H', 'F', 'R', 'P', 'M', 'L', 'K', 'A', 'N'];
+        
+        function getRandomName() {
+            return sampleNames[Math.floor(Math.random() * sampleNames.length)];
+        }
+        
+        function getRandomPoints() {
+            return Math.floor(Math.random() * 20) + 1;
+        }
+        
+        function getRandomLetter() {
+            return sampleLetters[Math.floor(Math.random() * sampleLetters.length)];
+        }
+        
+        function createNewRow() {
+            const row = document.createElement('div');
+            row.className = 'live-row';
+            
+            // Create 3 columns with random data
+            for (let i = 0; i < 3; i++) {
+                const p = document.createElement('p');
+                const name = getRandomName();
+                const points = getRandomPoints();
+                const letter = getRandomLetter();
+                
+                p.innerHTML = `${name} <b>+${points}</b><span>${letter}</span>`;
+                row.appendChild(p);
+            }
+            
+            return row;
+        }
+        
+        // Start animation immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure continuous visible scroll
+            scrollContainer.style.animationPlayState = 'running';
+            
+            // Periodically add new content to keep it fresh
+            setInterval(() => {
+                // Add new rows at the end
+                for (let i = 0; i < 3; i++) {
+                    const newRow = createNewRow();
+                    scrollContainer.appendChild(newRow);
+                }
+                
+                // Keep performance optimal by limiting total rows
+                const rows = scrollContainer.querySelectorAll('.live-row');
+                while (rows.length > 40) {
+                    rows[0].remove();
+                    rows = scrollContainer.querySelectorAll('.live-row');
+                }
+            }, 8000); // Add new content every 8 seconds
+        });
+    </script>
   </body>
 </html>
